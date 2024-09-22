@@ -17,7 +17,6 @@ import javax.swing.JLabel;
  * @author shara
  */
 public class HomePage extends JFrame{
-    
     private JButton btnAddCustomer;
     private JButton btnPlaceOrder;
     private JButton btnSearch;
@@ -25,89 +24,92 @@ public class HomePage extends JFrame{
     private JButton btnUpdateOrder;
     private JButton btnExit;
     
-    private JLabel lblHome;
+    private JLabel lblTxt;
     
     public HomePage(){
-        initComponents();
-    }
-    private void initComponents(){
-    
-        btnAddCustomer=new JButton("Add Customer");
-        btnAddCustomer.setFont(new Font("",Font.PLAIN,15));
-        btnAddCustomer.setBounds(100, 100, 300, 40);
+        setTitle("Home Page");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(500,600);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        setLayout(null);
+        
+        btnAddCustomer = new JButton("Add Customer");
+        btnAddCustomer.setFont(new Font("",Font.PLAIN, 15));
+        btnAddCustomer.setBounds(150,80,200,50);
         btnAddCustomer.setFocusable(false);
-        btnAddCustomer.addActionListener(evt ->{
+        btnAddCustomer.addActionListener(evt -> {
             
         });
         
-        btnPlaceOrder=new JButton("Place Order");
-        btnPlaceOrder.setFont(new Font("",Font.PLAIN,15));
-        btnPlaceOrder.setBounds(100, 150, 300, 40);
+        btnPlaceOrder = new JButton("Place Order");
+        btnPlaceOrder.setFont(new Font("",Font.PLAIN, 15));
+        btnPlaceOrder.setBounds(150,160,200,50);
         btnPlaceOrder.setFocusable(false);
-        btnPlaceOrder.addActionListener(evt ->{
-            new PlaceOrderPage().setVisible(true);
+        btnPlaceOrder.addActionListener(evt -> {
+            
         });
         
-        btnSearch=new JButton("Search");
-        btnSearch.setFont(new Font("",Font.PLAIN,15));
-        btnSearch.setBounds(100, 200, 300, 40);
+        btnSearch = new JButton("Search Order");
+        btnSearch.setFont(new Font("",Font.PLAIN, 15));
+        btnSearch.setBounds(150,240,200,50);
         btnSearch.setFocusable(false);
-        btnSearch.addActionListener(evt ->{
-            new SearchMenuForm().setVisible(true);
+        btnSearch.addActionListener(evt -> {
+            
         });
         
-        btnViewOrder=new JButton("View Orders");
-        btnViewOrder.setFont(new Font("",Font.PLAIN,15));
-        btnViewOrder.setBounds(100, 250, 300, 40);
+        btnViewOrder = new JButton("View Order");
+        btnViewOrder.setFont(new Font("",Font.PLAIN, 15));
+        btnViewOrder.setBounds(150,320,200,50);
         btnViewOrder.setFocusable(false);
-        btnViewOrder.addActionListener(evt ->{
-            new ViewOrdersPage().setVisible(true);
+        btnViewOrder.addActionListener(evt -> {
+            
         });
         
-        btnUpdateOrder=new JButton("Update order");
-        btnUpdateOrder.setFont(new Font("",Font.PLAIN,15));
-        btnUpdateOrder.setBounds(100, 300, 300, 40);
+        btnUpdateOrder = new JButton("Update Order");
+        btnUpdateOrder.setFont(new Font("",Font.PLAIN, 15));
+        btnUpdateOrder.setBounds(150,400,200,50);
         btnUpdateOrder.setFocusable(false);
-        btnUpdateOrder.addActionListener(evt ->{
-            new UpdateOrderForm().setVisible(true);
+        btnUpdateOrder.addActionListener(evt -> {
+            
         });
         
-        btnExit=new JButton("EXIT");
-        btnExit.setFont(new Font("",Font.PLAIN,15));
-        btnExit.setBounds(300, 370, 100, 40);
+        lblTxt = new JLabel();
+        lblTxt.setText("Home Page");
+        lblTxt.setFont(new Font("",Font.PLAIN,40));
+        lblTxt.setForeground(Color.RED);
+        lblTxt.setBounds(0,0,500,70);
+        lblTxt.setHorizontalAlignment(JLabel.CENTER);
+        lblTxt.setBackground(new Color(47,79,79));
+        lblTxt.setOpaque(true);
+        
+        btnSearch = new JButton("Search Order");
+        btnSearch.setFont(new Font("",Font.PLAIN, 15));
+        btnSearch.setBounds(150,240,200,50);
+        btnSearch.setFocusable(false);
+        btnSearch.addActionListener(evt -> {
+            
+        });
+        
+        
+        btnExit = new JButton("Exit");
+        btnExit.setFont(new Font("",Font.PLAIN, 15));
+        btnExit.setBounds(250,480,100,50);
         btnExit.setFocusable(false);
-        btnExit.addActionListener(evt ->{
+        btnExit.addActionListener(evt -> {
             System.exit(0);
         });
-        
-        lblHome = new JLabel();
-        lblHome.setText("Home Page");
-        lblHome.setFont(new Font("",Font.PLAIN,40));
-        lblHome.setForeground(Color.white);
-        lblHome.setBounds(0,0,500,70);
-        
-        lblHome.setVerticalAlignment(JLabel.CENTER);
-        lblHome.setHorizontalAlignment(JLabel.CENTER);
-        lblHome.setBackground(new Color(47,79,79));
-        lblHome.setOpaque(true);
-        
-        setTitle("Home Page");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(500,500);
-        setLocationRelativeTo(null);
-        setLayout(null);
-        
-        
-        add(lblHome);
-        
-        add(btnPlaceOrder);
         add(btnAddCustomer);
+        add(btnPlaceOrder);
         add(btnSearch);
         add(btnViewOrder);
         add(btnUpdateOrder);
         add(btnExit);
+        add(lblTxt);
         
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("../img/icon/icons8-customer-48.png")));
         
+        
     }
+    
 }

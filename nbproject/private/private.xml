@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/ICET%20106/Lectures/JAVA/burger-shop-POS-Swing-main/burger-shop-POS-Swing-main/src/View/HomePage.java</file>
+            <file>file:/D:/ICET%20106/Lectures/JAVA/burger-shop-POS-Swing-main/burger-shop-POS-Swing-main/src/View/UpdateOrderForm.java</file>
+            <file>file:/D:/ICET%20106/Lectures/JAVA/burger-shop-POS-Swing-main/burger-shop-POS-Swing-main/src/Controller/OrderController.java</file>
+            <file>file:/D:/ICET%20106/Lectures/JAVA/burger-shop-POS-Swing-main/burger-shop-POS-Swing-main/src/DB/OrderList.java</file>
+            <file>file:/D:/ICET%20106/Lectures/JAVA/burger-shop-POS-Swing-main/burger-shop-POS-Swing-main/src/Main.java</file>
+        </group>
     </open-files>
 </project-private>
